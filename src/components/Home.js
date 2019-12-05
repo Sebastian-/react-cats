@@ -11,7 +11,8 @@ function Home() {
 
   useEffect(() => {
     fetchCategories();
-  }, [categories]);
+    console.log("fetching categories");
+  }, []);
 
   async function fetchCategories() {
     const url = "https://api.thecatapi.com/v1/categories";
